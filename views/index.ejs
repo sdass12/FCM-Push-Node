@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Push</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <form action="/push-notification" method="post">
+      제목 : <input type="text" name="title">
+      내용 : <input type="text" name="body">
+      <input type="hidden" id="token" value="" name="token">
+      <button type="submit">메시지 보내기</button>
+    </form>
+    <%include fcm_script.ejs%>
+  </body>
+</html>
